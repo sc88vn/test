@@ -1,0 +1,78 @@
+body {
+    font-family: "Segoe UI",sans-serif;
+    background: linear-gradient(to right,#fdfbfb,#ebedee) center/cover no-repeat fixed,url('https://i.imgur.com/LojevMZ.jpeg') center/cover no-repeat fixed;
+    margin: 0;
+    padding: 20px;
+    position: relative
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.imgur.com/S0dbAKJ.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: .3;
+    z-index: -1;
+    animation: 20s ease-in-out infinite bgZoom
+}
+
+h1 {
+    color: #d35400;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+    flex-wrap: wrap
+}
+
+.ranking-title,.yourong-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    text-align: center
+}
+
+.link-container,.ranking-container {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,.1);
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: 400px;
+    box-sizing: border-box;
+    position: relative
+}
+
+.action {
+    margin: 15px 0
+}
+
+.action a {
+    display: block;
+    padding: 14px 24px;
+    background-color: #2980b9;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: transform .25s,background .25s,box-shadow .25s
+}
+
+.action a:hover {
+    background-color: #1c6690;
+    transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(0,0,0,.25)
+}
